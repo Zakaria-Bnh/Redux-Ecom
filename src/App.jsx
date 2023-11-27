@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import {
   Main,
   ProductDetails,
@@ -12,7 +12,7 @@ import {
 
 const App = () => {
   return (
-    <Router basename="/Redux-Ecom">
+    <Router >
       <Header />
 
       <main className="min-h-[80vh]">
