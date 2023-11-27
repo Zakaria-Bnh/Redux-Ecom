@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+
+@layer base {
+    body{
+        font-family: 'Questrial', sans-serif;
+        letter-spacing: 1px;
+        overflow-x: hidden;
+        }
+}
+
+
+
+
+@layer utilities {
+    .container {
+        @apply mx-auto w-[90%] sm:w-[85%] max-w-screen-xl
+    }
+}
+
+
+
