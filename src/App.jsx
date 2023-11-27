@@ -12,7 +12,7 @@ import {
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/Redux-Ecom">
       <Header />
 
       <main className="min-h-[80vh]">
