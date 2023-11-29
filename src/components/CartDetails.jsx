@@ -83,11 +83,14 @@ const CartDetails = ({ total }) => {
 
       <div className="w-full h-[2px] bg-gray-300 mb-4"></div>
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-4">
         <h3 className="font-semibold text-lg">TOTAL</h3>
         <span className="text-lg font-semibold">
           {(total + total * shippingPrice).toFixed(2)}$
         </span>
+      </div>
+      <div>
+        <button className=" bg-darkBlue rounded-sm tracking-wide  w-full p-3 hover:opacity-80 text-white flex-1 transition-colors duration-300`">PROCEED TO CHECKOUT</button>
       </div>
     </div>
   );

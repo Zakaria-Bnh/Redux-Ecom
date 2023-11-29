@@ -101,10 +101,10 @@ const ProductQuickView = () => {
     <div className="flex justify-center">
       <div
         onClick={() => handlecloseQuickView()}
-        className="bg-black opacity-70 fixed h-screen w-screen z-20 top-0"
+        className="bg-black opacity-70 fixed h-full w-screen z-20 top-0"
       ></div>
 
-      <div className="fixed top-12 bottom-12 sm:bottom-auto  flex justify-center items-center z-40">
+      <div className="fixed top-12 sm:top-28 h-[85vh] sm:h-auto sm:bottom-auto  flex justify-center rounded-md items-center z-40">
         <div className="bg-white rounded-sm overflow-hidden  h-full relative w-11/12  max-w-[800px]  flex flex-col sm:flex-row">
           <div className="flex-1 flex justify-center items-center md:items-start">
             <div className=" max-w-[280px] md:max-w-[320px]  p-12 mx-auto">
@@ -120,7 +120,7 @@ const ProductQuickView = () => {
               onClick={() => handlecloseQuickView()}
               className="w-full mb-8 cursor-pointer"
             >
-              <AiOutlineClose className=" absolute right-3 top-3 ml-auto w-5 h-5 hover:text-red-600 " />
+              <AiOutlineClose className=" absolute right-3 top-3 ml-auto w-8 h-8 hover:text-red-600 " />
             </div>
             <h1 className="mb-2 font-semibold text-xl">{product.title}</h1>
             <div className="flex items-end gap-4 mb-6">
@@ -144,9 +144,9 @@ const ProductQuickView = () => {
               >
                 <span className="text-gray-500">quantity</span>
                 <div className="flex items-center gap-2">
-                  <button onClick={handleIncreaseAmount}>+</button>
+                  <button onClick={handleIncreaseAmount} className="text-xl font-bold">+</button>
                   <span>{amount}</span>
-                  <button onClick={handleDecreaseAmount}>-</button>
+                  <button onClick={handleDecreaseAmount} className="text-xl font-bold">-</button>
                 </div>
               </div>
               <button
@@ -158,7 +158,7 @@ const ProductQuickView = () => {
                 {itemIsAdded ? "ITEM IS ADDED !" : "ADD TO CART"}
               </button>
             </div>
-            <button
+            <div
               onClick={handleFavorite}
               className="flex items-center gap-2"
             >
@@ -170,7 +170,7 @@ const ProductQuickView = () => {
               <span className="text-gray-500 hover:text-gray-800 ">
                 {itemIsFavorite ? "remove from wishlist!" : "Add to wish list"}
               </span>
-            </button>
+            </div>
           </div>
         </div>
       </div>

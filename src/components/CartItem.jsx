@@ -46,9 +46,9 @@ const handleDecreaseAmount = () => {
           <div className=" flex items-center w-fit px-2 self-stretch gap-3 rounded-sm ">
             <span>quantity</span>
             <div className="flex items-center gap-2">
-              <button onClick={handleIncreaseAmount}>+</button>
+              <button onClick={handleIncreaseAmount} className="text-xl font-bold">+</button>
               <span>{amount}</span>
-              <button onClick={handleDecreaseAmount}>-</button>
+              <button onClick={handleDecreaseAmount} className="text-xl font-bold">-</button>
             </div>
           </div>
 
